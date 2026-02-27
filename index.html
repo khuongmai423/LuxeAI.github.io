@@ -6,7 +6,6 @@
 
 <title>LuxeAI – AI for Luxury Hotel Guest Insights</title>
 <meta name="description" content="LuxeAI helps luxury hotels predict VIP guest behavior, improve retention, and increase revenue using AI-powered insights.">
-<meta name="keywords" content="AI for luxury hotels, hotel personalization software, VIP guest analytics">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -17,162 +16,135 @@
   --ivory: #F8F6F2;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background-color: var(--ivory);
-  color: var(--navy);
-  line-height: 1.6;
+  font-family:'Inter',sans-serif;
+  background:var(--ivory);
+  color:var(--navy);
+  line-height:1.6;
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
-}
+h1,h2,h3 { font-family:'Playfair Display',serif; }
 
-section {
-  padding: 80px 10%;
-}
+section { padding:100px 10%; }
 
 .btn {
-  background: var(--gold);
-  color: white;
-  padding: 14px 28px;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: 600;
-  display: inline-block;
-  transition: 0.3s ease;
+  background:var(--gold);
+  color:white;
+  padding:14px 28px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+  display:inline-block;
+  transition:.3s;
 }
-
-.btn:hover {
-  background: #b8964c;
-}
+.btn:hover { background:#b8964c; }
 
 .hero {
-  background: linear-gradient(rgba(15,26,43,0.7), rgba(15,26,43,0.7)),
-              url('luxury-hotel.jpg') center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 140px 10%;
+  background:linear-gradient(rgba(15,26,43,.75),rgba(15,26,43,.75)),
+  url('images/luxury-lobby.jpg') center/cover no-repeat;
+  color:white;
+  text-align:center;
+  padding:160px 10%;
 }
-
-.hero h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 20px;
-  margin-bottom: 30px;
-}
+.hero h1 { font-size:48px; margin-bottom:20px; }
+.hero p { font-size:20px; margin-bottom:30px; }
 
 .video-container {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
+  margin-top:50px;
+  display:flex;
+  justify-content:center;
 }
-
 .video-container iframe {
-  width: 80%;
-  height: 400px;
-  border-radius: 12px;
+  width:80%;
+  height:420px;
+  border-radius:16px;
 }
 
-.features {
-  text-align: center;
-}
+.features h2 { text-align:center; margin-bottom:60px; font-size:36px; }
 
-.features h2 {
-  margin-bottom: 40px;
-  font-size: 36px;
+.feature-row {
+  display:flex;
+  align-items:center;
+  gap:60px;
+  margin-bottom:80px;
 }
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 40px;
+.feature-row img {
+  width:50%;
+  border-radius:20px;
+  box-shadow:0 15px 40px rgba(0,0,0,.1);
 }
+.feature-text { width:50%; }
 
-.feature-box {
-  background: white;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+.feature-row.reverse { flex-direction:row-reverse; }
+
+.image-break {
+  height:450px;
+  background:url('images/vip-concierge.jpg') center/cover no-repeat;
 }
 
 .how-it-works {
-  background: var(--navy);
-  color: white;
-  text-align: center;
+  background:var(--navy);
+  color:white;
+  text-align:center;
 }
-
 .steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 40px;
-  margin-top: 40px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:40px;
+  margin-top:50px;
 }
 
-.testimonials {
-  text-align: center;
-}
+.testimonials { text-align:center; }
 
 .testimonial-box {
-  background: white;
-  padding: 40px;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
-  max-width: 700px;
-  margin: 0 auto;
+  max-width:800px;
+  margin:40px auto;
+  background:white;
+  padding:50px;
+  border-radius:20px;
+  box-shadow:0 15px 40px rgba(0,0,0,.08);
+}
+.testimonial-box img {
+  width:100%;
+  height:250px;
+  object-fit:cover;
+  border-radius:16px;
+  margin-bottom:30px;
 }
 
 .demo {
-  background: linear-gradient(135deg, var(--navy), #1f2d45);
-  color: white;
-  text-align: center;
+  background:linear-gradient(135deg,var(--navy),#1f2d45);
+  color:white;
+  text-align:center;
 }
-
 form {
-  max-width: 600px;
-  margin: 40px auto 0;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  max-width:600px;
+  margin:40px auto 0;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
 }
-
-input, select {
-  padding: 14px;
-  border-radius: 8px;
-  border: none;
-  font-size: 16px;
+input,select {
+  padding:14px;
+  border-radius:8px;
+  border:none;
+  font-size:16px;
 }
 
 footer {
-  background: var(--navy);
-  color: white;
-  text-align: center;
-  padding: 40px 10%;
+  background:var(--navy);
+  color:white;
+  text-align:center;
+  padding:50px 10%;
 }
 
-footer a {
-  color: var(--gold);
-  text-decoration: none;
-}
-
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 32px;
-  }
-
-  .video-container iframe {
-    width: 100%;
-    height: 250px;
-  }
+@media(max-width:900px){
+  .feature-row { flex-direction:column; }
+  .feature-row img,.feature-text { width:100%; }
+  .hero h1 { font-size:32px; }
+  .video-container iframe { width:100%; height:250px; }
 }
 </style>
 </head>
@@ -186,8 +158,7 @@ footer a {
   <a href="#demo" class="btn">Request a Personalized Demo</a>
 
   <div class="video-container">
-    <iframe src="https://www.youtube.com/embed/VIDEO_ID" 
-            frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
   </div>
 </section>
 
@@ -195,31 +166,45 @@ footer a {
 <section class="features">
   <h2>Why LuxeAI? Key Benefits for Luxury Hotels</h2>
 
-  <div class="feature-grid">
-    <div class="feature-box">
+  <div class="feature-row">
+    <img src="images/dashboard.jpg" alt="AI dashboard for luxury hotel analytics">
+    <div class="feature-text">
       <h3>Predictive Guest Insights</h3>
-      <p>Identify which VIP guests are most likely to return with AI-driven behavioral analysis.</p>
-    </div>
-
-    <div class="feature-box">
-      <h3>Upsell Optimization</h3>
-      <p>Increase spa, dining, and suite revenue through intelligent personalization.</p>
-    </div>
-
-    <div class="feature-box">
-      <h3>Real-Time Dashboards</h3>
-      <p>Track occupancy, revenue, and engagement with executive-level insights.</p>
-    </div>
-
-    <div class="feature-box">
-      <h3>Seamless Integration</h3>
-      <p>Works effortlessly with PMS & CRM systems without disrupting workflows.</p>
+      <p>Identify which VIP guests are most likely to return with AI-driven behavioral intelligence and lifetime value scoring.</p>
     </div>
   </div>
-  
-  <br><br>
-  <a href="#demo" class="btn">See LuxeAI in Action</a>
+
+  <div class="feature-row reverse">
+    <img src="images/spa-luxury.jpg" alt="Luxury hotel spa interior">
+    <div class="feature-text">
+      <h3>Upsell Optimization</h3>
+      <p>Increase spa, dining, and suite upgrade revenue through intelligent, perfectly timed personalization.</p>
+    </div>
+  </div>
+
+  <div class="feature-row">
+    <img src="images/hotel-manager-tablet.jpg" alt="Hotel manager reviewing analytics on tablet">
+    <div class="feature-text">
+      <h3>Real-Time Executive Dashboards</h3>
+      <p>Track occupancy, revenue, and engagement in one unified luxury-grade dashboard.</p>
+    </div>
+  </div>
+
+  <div class="feature-row reverse">
+    <img src="images/pms-system.jpg" alt="Hotel PMS integration system">
+    <div class="feature-text">
+      <h3>Seamless Integration</h3>
+      <p>Connect effortlessly with your PMS & CRM systems without disrupting daily operations.</p>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:50px;">
+    <a href="#demo" class="btn">See LuxeAI in Action</a>
+  </div>
 </section>
+
+<!-- IMAGE BREAK -->
+<section class="image-break"></section>
 
 <!-- HOW IT WORKS -->
 <section class="how-it-works">
@@ -232,15 +217,15 @@ footer a {
     </div>
     <div>
       <h3>2. AI Analysis</h3>
-      <p>Identify patterns and predict guest behavior.</p>
+      <p>Identify patterns and predict VIP behavior.</p>
     </div>
     <div>
       <h3>3. Deliver Insights</h3>
-      <p>Provide staff with actionable dashboards.</p>
+      <p>Provide intuitive dashboards and alerts to staff.</p>
     </div>
     <div>
-      <h3>4. Drive Results</h3>
-      <p>Increase retention, satisfaction, and revenue.</p>
+      <h3>4. Drive Revenue</h3>
+      <p>Increase retention, satisfaction, and total revenue.</p>
     </div>
   </div>
 </section>
@@ -250,18 +235,17 @@ footer a {
   <h2>Trusted by Luxury Hotels</h2>
 
   <div class="testimonial-box">
+    <img src="images/hotel-interior.jpg" alt="Five star hotel interior">
     <p>"LuxeAI helped us identify top VIP guests, increasing retention by 20% in just three months."</p>
     <br>
     <strong>– GM, The Grand Regency Hotel</strong>
   </div>
 
-  <br><br>
-
-  <h3>Case Study Results:</h3>
-  <p>+15% Spa Revenue | +10% Repeat Bookings | +18% VIP Upsell Conversions</p>
+  <p><strong>Case Study Results:</strong><br>
+  +15% Spa Revenue | +10% Repeat Bookings | +18% VIP Upsell Conversions</p>
 </section>
 
-<!-- DEMO FORM -->
+<!-- DEMO -->
 <section class="demo" id="demo">
   <h2>Request Your Personalized Demo</h2>
   <p>See how LuxeAI transforms guest data into measurable revenue growth.</p>
@@ -271,7 +255,6 @@ footer a {
     <input type="email" placeholder="Email Address" required>
     <input type="text" placeholder="Hotel / Company" required>
     <input type="text" placeholder="Job Title" required>
-
     <select required>
       <option value="">Interested Feature</option>
       <option>Predictive Insights</option>
@@ -279,25 +262,18 @@ footer a {
       <option>Executive Dashboard</option>
       <option>Integration</option>
     </select>
-
     <button type="submit" class="btn">Get Your Demo</button>
   </form>
 
-  <p style="margin-top:15px;font-size:14px;">We respect your privacy. No spam. Enterprise-grade data protection.</p>
+  <p style="margin-top:15px;font-size:14px;">
+    We respect your privacy. Enterprise-grade data protection.
+  </p>
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>Contact: <a href="mailto:info@luxeai.com">info@luxeai.com</a></p>
-  <p>
-    <a href="#">LinkedIn</a> |
-    <a href="#">Instagram</a> |
-    <a href="#">YouTube</a>
-  </p>
-  <p style="margin-top:15px;">
-    <a href="#">Privacy Policy</a> | 
-    <a href="#">Terms of Service</a>
-  </p>
+  <p>Contact: info@luxeai.com</p>
+  <p>LinkedIn | Instagram | YouTube</p>
   <p style="margin-top:20px;font-size:14px;">© 2026 LuxeAI. All rights reserved.</p>
 </footer>
 
